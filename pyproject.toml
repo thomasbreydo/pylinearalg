@@ -6,6 +6,7 @@ authors = ["Thomas Breydo <tbreydo@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+sympy = "^1.9"
 
 [tool.poetry.dev-dependencies]
 

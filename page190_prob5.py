@@ -1,11 +1,12 @@
 """Solution to problem 5 from page 190 of Axler's Linear Algebra Done Right"""
+import sympy
 
 from pylinearalg import BasisVector, Vector, VectorSpace, gram_schmidt
 
 
 def inner_product(p, q):
     """Evaluate the definite integral from 0 to 1 of pq."""
-    total = 0
+    total = sympy.Mul(0)
     for exp1, coef1 in enumerate(p.components):
         for exp2, coef2 in enumerate(q.components):
             # integral of (coef1)x^exp1 + (coef2)x^exp2 is:
