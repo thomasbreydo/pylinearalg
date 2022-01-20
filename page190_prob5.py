@@ -9,7 +9,7 @@ def inner_product(p, q):
     total = sympy.Mul(0)
     for exp1, coef1 in enumerate(p.components):
         for exp2, coef2 in enumerate(q.components):
-            # integral of (coef1)x^exp1 + (coef2)x^exp2 is:
+            # integral of (coef1)x^exp1 * (coef2)x^exp2 is:
             total += coef1 * coef2 / (exp1 + exp2 + 1)
     return total
 
